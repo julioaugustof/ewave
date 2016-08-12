@@ -1,0 +1,219 @@
+/* clean CSS */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+	body {line-height: 1;}
+	ol, ul {list-style: none;}
+	blockquote, q {quotes: none;}
+	blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+	table {border-collapse: collapse;border-spacing: 0;}
+/* clean CSS */
+
+/* Áreas gerais */
+
+	html {background: #500036 url('../images/loading.gif') no-repeat center; width: 100%; height: 100%;}
+	body {display: none; font-family: 'Open Sans', sans-serif; background: no-repeat center center; background-size: 100%; height: 100%; width: 100%; font-family: 'Open Sans', sans-serif; z-index: 5; font-size: 100%; color: #FFF; margin-bottom: 40px;}
+		
+		body:before {content: ''; widows: 100%; height: 100%; display: block; background: #333; opacity: .6;}
+		.bg1 {background-image: url('../../imagens/bg1.jpeg');}
+		.bg2 {background-image: url('../../imagens/bg2.jpeg');}
+		.bg3 {background-image: url('../../imagens/bg3.jpeg');}
+		.bg4 {background-image: url('../../imagens/bg4.jpeg');}
+
+		#Load {display: none;}
+
+	section {display: block; clear: both; position: absolute; top: 0px; width: 100%; background: rgba(255, 255, 255, .5); margin: 150px 0 0; padding: 30px 0; color: #333;}
+		section h2 {font-family: 'Norican', cursive; color: #000; font-size: 30px;}
+		section div {width: 1024px; margin: 0 auto; box-sizing: border-box;}
+
+		.box {background: #FFF; box-sizing: border-box; padding: 2em 3em; border: 2px solid #EFEFEF; -webkit-box-shadow: 7px 7px 0 0 #EFEFEF; -moz-box-shadow: 7px 7px 0 0 #EFEFEF; box-shadow: 7px 7px 0 0 #EFEFEF;}
+		
+	br {clear: both; display: block;}
+	footer {height: 40px; color: rgba(255,255,255,0.6); font-size: 12px; text-align: center; line-height: 40px}
+
+	/* Links e botões */
+		a {text-decoration: none;}
+		a.btn {background: #e68d00; padding: 5px 15px; border-radius: 25%; color: #FFF;}
+
+		/* Header */
+			header {display: block; position: absolute; top: 0; padding: 10px 20px; width: 100%; box-sizing: border-box;}
+				
+				#Marca {width: 240px; height: 80px; display: block; text-align: center; float: left; margin-left: 50px; margin-top: 10px;}
+				#Marca h3 {font-family: 'Norican', cursive; color: #e68d00; font-size: 60px; display: block; clear: both;}
+				#Marca h2 {font-family: 'Open Sans', sans-serif; color: #FFF; font-size: 10px;}
+
+				/* Menu */
+
+					/* Desktop */
+						@media screen and (min-width: 801px) {
+							#AreaDoMenu {float: right; line-height: 35px; margin-top: 20px; margin-right: 60px;}
+							#PaginaInicial #AreaDoMenu {margin-top: 40px;}
+								#AreaDoMenu a {padding: 5px 15px 10px; color: #FFF; font-size: 14px; float: left; border-bottom: 2px solid rgba(255,255,255,0.4); -webkit-transition: all 400ms; -moz-transition: all 400ms; -ms-transition: all 400ms; -o-transition: all 400ms; transition: all 400ms;}
+								#AreaDoMenu a:hover {border-bottom-color: #e68d00;}
+
+									#principal {color: #e68d00 !important;}
+
+								#AreaDoMenu span, #AreaDoMenu h1, #AreaDoMenu h2, #Menu {display: none;}
+						}
+
+					/* Mobile */
+						@media screen and (max-width: 800px) {
+
+							header {position: fixed; height: 80px}
+
+							#Marca {height: 60px; position: absolute; left: 50%; margin-left: -120px;}
+								#Marca h3 {font-size: 50px;}
+
+							#AreaDoMenu {width: 80%; height: 100%; box-sizing: border-box; padding: 30px; position: fixed; top: 0; left: -150%; background: #333; -webkit-box-shadow: 5px 0px 50px 0px rgba(0, 0, 0, .5); -moz-box-shadow: 5px 0px 50px 0px rgba(0, 0, 0, .5); box-shadow: 5px 0px 50px 0px rgba(0, 0, 0, .5); -webkit-transition: all 400ms; -moz-transition: all 400ms; -ms-transition: all 400ms; -o-transition: all 400ms; transition: all 400ms;}
+								#AreaDoMenu a {display: block; clear: both; padding: 20px 0; color: #FFF; font-size: 14px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.2);}
+								#principal {color: #e68d00 !important; font-weight: bold;}
+
+							#AreaDoMenu.aberto {left: 0;}
+
+							#AreaDoMenu h1 {font-family: 'Norican', cursive; color: #e68d00; font-size: 80px; display: block; clear: both; text-align: center;}
+							#AreaDoMenu h2 {font-family: 'Open Sans', sans-serif; color: #FFF; font-size: 12px; text-align: center; margin-bottom: 30px;}
+
+							#AreaDoMenu span {font-size: 10px; color: rgba(255, 255, 255, 0.3); text-align: center; margin-top: 40px; display: block; clear: both;}
+						
+							#Menu {-webkit-transform: translateZ(0); position: fixed; width: 20px; height: 20px; cursor: pointer; z-index: 9999; padding: 20px 10px;}
+							#Menu.aberto {}
+
+								#cima {top: 20px;}
+								#meio {top: 28px;}
+								#baixo {top: 36px;}
+								
+								#Menu span {display: block; background: #FFF; width: 20px; height: 2px; position: absolute; border: 1px solid rgba(0,0,0,0.7); -webkit-animation-fill-mode: forwards; -moz-animation-fill-mode: forwards; animation-fill-mode: forwards;}
+
+									#Menu.aberto #cima {-webkit-animation: inTop 0.4s forwards; -moz-animation: inTop 0.4s forwards; animation: inTop 0.4s forwards;}
+									#Menu.aberto #meio {-webkit-animation: inMiddle 0.4s forwards; -moz-animation: inMiddle 0.4s forwards; animation: inMiddle 0.4s forwards;}
+									#Menu.aberto #baixo {-webkit-animation: inBottom 0.4s forwards; -moz-animation: inBottom 0.4s forwards; animation: inBottom 0.4s forwards;}
+
+									#Menu #cima {-webkit-animation: outTop 0.4s backwards; -webkit-animation-direction: reverse; -moz-animation: outTop 0.4s backwards; -moz-animation-direction: reverse; animation: outTop 0.4s backwards; animation-direction: reverse;}
+									#Menu #meio {-webkit-animation: outMiddle 0.4s backwards; -webkit-animation-direction: reverse; -moz-animation: outMiddle 0.4s backwards; -moz-animation-direction: reverse; animation: outMiddle 0.4s backwards; animation-direction: reverse;}
+									#Menu #baixo {-webkit-animation: outBottom 0.4s backwards; -webkit-animation-direction: reverse; -moz-animation: outBottom 0.4s backwards; -moz-animation-direction: reverse; animation: outBottom 0.4s backwards; animation-direction: reverse;}
+
+									@-webkit-keyframes inMiddle {
+										50% {-webkit-transform: rotate(0deg);}
+										100% {-webkit-transform: rotate(45deg);}
+									}
+									@-moz-keyframes inMiddle {
+										50% {-moz-transform: rotate(0deg);}
+										100% {-moz-transform: rotate(45deg);}
+									}
+									@keyframes inMiddle {
+										50% {transform: rotate(0deg);}
+										100% {transform: rotate(45deg);}
+									}
+									@-webkit-keyframes outMiddle {
+										50% {-webkit-transform: rotate(0deg);}
+										100% {-webkit-transform: rotate(45deg);}
+									}
+									@-moz-keyframes outMiddle {
+										50% {-moz-transform: rotate(0deg);}
+										100% {-moz-transform: rotate(45deg);}
+									}
+									@keyframes outMiddle {
+										50% {transform: rotate(0deg);}
+										100% {transform: rotate(45deg);}
+									}
+									@-webkit-keyframes inTop {
+										0% {top: 20px;}
+										50% {top: 28px; -webkit-transform: rotate(0deg);}
+										100% {top: 28px;-webkit-transform: rotate(135deg);}
+									}
+									@-moz-keyframes inTop {
+										0% {top: 20px;}
+										50% {top: 28px; -moz-transform: rotate(0deg);}
+										100% {top: 28px; -moz-transform: rotate(135deg);}
+									}
+									@keyframes inTop {
+										0% {top: 20px;}
+										50% {top: 28px; transform: rotate(0deg);}
+										100% {top: 28px; transform: rotate(135deg);}
+									}
+									@-webkit-keyframes outTop {
+										0% {top: 20px;}
+										50% {top: 28px; -webkit-transform: rotate(0deg);}
+										100% {top: 28px; -webkit-transform: rotate(135deg);}
+									}
+									@-moz-keyframes outTop {
+										0% {top: 20px;}
+										50% {top: 28px; -moz-transform: rotate(0deg);}
+										100% {top: 28px; -moz-transform: rotate(135deg);}
+									}
+									@keyframes outTop {
+										0% {top: 20px;}
+										50% {top: 28px; transform: rotate(0deg);}
+										100% {top: 28px; transform: rotate(135deg);}
+									}
+									@-webkit-keyframes inBottom {
+										0% {top: 36px;}
+										50% {top: 28px; -webkit-transform: rotate(0deg);}
+										100% {top: 28px;-webkit-transform: rotate(135deg);}
+									}
+									@-moz-keyframes inBottom {
+										0% {top: 36px;}
+										50% {top: 28px; -moz-transform: rotate(0deg);}
+										100% {top: 28px;-moz-transform: rotate(135deg);}
+									}
+									@keyframes inBottom {
+										0% {top: 36px;}
+										50% {top: 28px; transform: rotate(0deg);}
+										100% {top: 28px; transform: rotate(135deg);}
+									}
+									@-webkit-keyframes outBottom {
+										0% {top: 36px;}
+										50% {top: 28px;-webkit-transform: rotate(0deg);}
+										100% {top: 28px;-webkit-transform: rotate(135deg);}
+									}
+									@-moz-keyframes outBottom {
+										0% {top: 36px;}
+										50% {top: 28px; -moz-transform: rotate(0deg);}
+										100% {top: 28px; -moz-transform: rotate(135deg);}
+									}
+									@keyframes outBottom {
+										0% {top: 36px;}
+										50% {top: 28px; transform: rotate(0deg);}
+										100% {top: 28px; transform: rotate(135deg);}
+									}
+
+						}
+
+					@media screen and (max-width: 350px) {
+						#AreaDoMenu h1 {font-size: 50px;}
+						#AreaDoMenu h2 {font-size: 10px;}
+					}
+
+/* Página Inicial */
+	#PaginaInicial #Marca {position: fixed; top: 50%; left: 50%; margin-left: -120px; margin-top: -40px;}
+	#PaginaInicial #Marca h3 {font-size: 80px;}
+	#PaginaInicial #Marca h2 {font-size: 12px;}
+	
+/* Máquina de Leads */
+	#Favorita {background-image: url('../../imagens/beer.jpeg');}
+	#Favorita section {}
+	#Favorita section div article {float: left; width: 50%; padding: 20px; box-sizing: border-box;}
+	#Favorita section div article p {font-size: 13px; line-height: 17px;}
+
+	#Favorita label {display: block; clear: both; font-size: 15px; padding: 10px 0;}
+	#Favorita label select {border: 1px solid #EFEFEF; padding: 10px; background: #FFF; margin-left: 10px;}
+
+	#Enviar {width: 100%; padding: 15px; background: #e68d00; color: #FFF; font-size: 15px; border: none; border-radius: 5px; cursor: pointer;}
+
+/* Página Rótulos */
+	#Catalogo {background-image: url('../../imagens/rotulos.jpeg');}
+
+/* Página Sobre */
+	#PaginaAbout {background-image: url('../../imagens/about.jpeg');}
+
+/* Página Contato */
+	#Contato {background-image: url('../../imagens/contato.jpeg');}
+
+
+/* Versionamento mobile */
+	@media screen and (max-width: 900px) {
+		body {background-size: auto 100%;}
+
+		#Favorita section div {width: 100%;}
+		#Favorita section div article {float: none; display: block; clear: both; width: 100%;}
+	}

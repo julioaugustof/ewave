@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# DirectoryIndex index.html index.php
+ErrorDocument 404 /index.php
+ErrorDocument 403 /index.php
+
+# remove barra do final da url
+RewriteCond %{REQUEST_URI} (.*)$
+RewriteRule ^(.+)/$  /$1 [R=301,L]
+
+
+RewriteRule ^sobre$ /about.php
+RewriteRule ^meus-fetiches$ /fetiches.php
+RewriteRule ^meus-textos$ /textos.php
+RewriteRule ^meus-textos/mostre-me-mestre$ /texto-1.php
+RewriteRule ^meus-textos/dor-e-medo$ /texto-2.php
+RewriteRule ^fale-comigo$ /contato.php
